@@ -6,9 +6,9 @@ import time
 import json
 from datetime import datetime
 
-# Configure Gemini
-genai.configure(api_key="AIzaSyALSp9jVTV04ziisP5IdFu5-VpPsx39NfU")
-model = genai.GenerativeModel('gemini-pro')
+# Configure Google Gemini
+genai.configure(api_key="AIzaSyBsq5Kd5nJgx2fejR77NT8v5Lk3PK4gbH8")  # Replace with your Gemini API key
+gemini = genai.GenerativeModel('gemini-1.5-flash')
 
 class FinanceAgent:
     def __init__(self):
